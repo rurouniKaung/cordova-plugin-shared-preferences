@@ -11,7 +11,7 @@ cordova plugin add cordova-plugin-shared-preferences --save
 
 ```javascript
 document.addEventListener('deviceready', () => {
-  const prefs = window.plugins.SharedPreferences
+  const prefs = window.SharedPreferences
   prefs.getSharedPreferences('shared_preferences', 'MODE_PRIVATE', () => {
     prefs.putString('pref_key', 'some text')
 
